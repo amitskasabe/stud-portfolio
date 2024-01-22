@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --dark-bg: #0b0b30;
+  --dark-nav: #000021;
+  --text-color: black;
+}
+@font-face {
+  font-family: Mulish;
+  src: url("../../fonts/Mulish-Regular.ttf");
+}
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  font-family: Mulish;
+}
+li {
+  list-style-type: none;
+}
+nav {
+  background-color: var(--dark-nav);
+  padding: 15px 5px !important;
+}
+
+nav #navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item-single {
+  margin: 0px 10px 0px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-brand {
+  color: white;
+  font-size: 30px;
+}
+
+.list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-left-side{
+    color: white;
+    width: 50%;
+    margin: 100px 40px;
+
+}
+.hero-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.flex{
+    display: flex;
+}
+.h-full {
+    height: 100vh;
+}
+.h-75{
+    height: 75vh;
+}
+
+.cs-button{
+    padding: 10px;
+    background-color: lime;
+    color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.mt-2 {
+    margin-top:20px;
+}
+.mt-1 {
+    margin-top: 10px;
+}
+
+.hero-title{
+    font-size: 50px;
+}
+
+@media (max-width: 391px) {
+  #nav-brand {
+    font-size: 20px;
+  }
+  nav {
+    background-color: var(--dark-nav);
+    /* padding: 25px 5px!important; */
+  }
+  .nav-item-single {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+  nav #navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #nav {
+    flex-direction: column;
+  }
+  .list-items {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .hero-section{
+    flex-direction: column;
+  }
+  #hero-image{
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+  }
+  .button-wrapper .cs-button{
+    margin-top: 10px;
+  }
+}

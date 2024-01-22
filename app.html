@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/css/style.css" />
+    <script src="user.js"></script>
+    <script>
+      let brandName = Developer.brandName;
+      let name = Developer.name;
+      const position = Developer.position;
+      const ImageUrl = Developer.ImageUrl;
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul id="nav">
+        <div class="nav-brand">
+            <h1 id="nav-brand"> 
+              amit
+            </h1>
+        </div>
+        <div class="list-items">
+          <li><a class="nav-item-single" href="pages/home.html">Home</a></li>
+          <li>
+            <a class="nav-item-single" href="pages/contact.html">Contact</a>
+          </li>
+          <li><a class="nav-item-single" href="pages/about.html">About</a></li>
+        </div>
+      </ul>
+    </nav>
+    <section>
+      <div class="hero-section flex h-75">
+        <div class="hero-left-side">
+          <div class="hero-content">
+            <h1 class="hero-title"> Hello My Name Is <span id="dev-name"></span> </h1>
+            <h2> I am A </h2><h1 id="pos"> Web Developer </h1>
+           <div class="button-wrapper mt-2">
+            <button class="cs-button">Download Resume</button>
+            <a href="vinay.pdf" download="Resume" class="cs-button nav-item-single">Hire Me</a>
+
+           </div>
+          </div>
+          <div class="social-section">
+            <ul class="flex">
+              <li><a href="https://www.instagram.com/iamamitkasabe" target="_blank" class="nav-item-single"  >Instagram</a></li>
+              <li><a href="" class="nav-item-single">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-right-side">
+          <img src="" alt="amit kasabe" style="border-radius: 50%;" width="350" height="350" alt="dev" id="hero-image">
+        </div>
+      </div>
+    </section>
+    <script>
+        const brand = document.getElementById("nav-brand");
+        brand.innerHTML = brandName;
+        const developerName = document.querySelector("#dev-name").innerHTML = name;
+        const Pos = document.querySelector("#pos").innerHTML = position;
+        const Img = document.querySelector("#hero-image").src = ImageUrl
+    </script>
+  </body>
+</html>
